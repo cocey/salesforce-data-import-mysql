@@ -2,7 +2,6 @@
 
 This script just reading Salesforce csv files import to MySQL database.
 
-
 ## Salesforce IDs
 
 Salesforce using base62 encoding for Id column. I used Sumin Byeon's base62 library for id convertions.
@@ -10,6 +9,20 @@ Salesforce using base62 encoding for Id column. I used Sumin Byeon's base62 libr
 [https://github.com/suminb/base62](https://github.com/suminb/base62)
 
 Also original Salesforce ids added to SfId column
+
+## Missing Tables
+
+While you exporting your Salesforce data some tables does not seen on the list. I just detect and get data with Salesforce API.
+
+It could be much more table but these are solved my problem.
+
+~~~
+BusinessHours
+CaseMilestone
+EntitlementMilestone
+MilestoneType
+SlaProcess
+~~~
 
 ## Column Types
 
