@@ -15,6 +15,10 @@ Also original Salesforce ids added to SfId column
 
 Script detecting column types with column names also the values in it.
 
+## Users Table
+
+In the User.csv file there is no password data. I just needed in my custom project and added Password column and set default password as "P@ssW0rD".
+
 ## Before Running
 
 Be sure you created MySQL database!

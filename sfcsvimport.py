@@ -298,7 +298,7 @@ def getFieldTypeByName(fieldName):
     return None
 
 def addPasswordField():
-    defaultPassword = '$2y$10$Oe7op5MeR.DQJPRTmSdqM.lFM4LnqhaUDvcM.stAUZHBOCn59G2py'
+    defaultPassword = 'P@ssW0rD'
     sql = "ALTER TABLE User ADD COLUMN UserPassword varchar(255) DEFAULT '"+defaultPassword+"' AFTER Username;"
     myCursor = myDb.cursor()
     myCursor.execute(sql)
