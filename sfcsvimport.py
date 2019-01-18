@@ -401,6 +401,7 @@ def resolveDirectory(dirPath):
             resolveFile(filePath)
     
     addPasswordField()
+    return True
 
 
 
